@@ -18,5 +18,11 @@ module LattesClient
       content_type :json
       { id: '1234567890123456' }.to_json
     end
+
+    get '/lattes/curriculo_compactado' do
+      content_type :json
+      encoded_zip = Base64.encode64(curriculum_zip)
+      { curriculo: encoded_zip }.to_json
+    end
   end
 end

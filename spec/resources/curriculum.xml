@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<CURRICULO-VITAE
+  SISTEMA-ORIGEM-XML="LATTES_OFFLINE"
+  DATA-ATUALIZACAO="24032014"
+  HORA-ATUALIZACAO="171439"
+  NUMERO-IDENTIFICADOR="1234567890123456">
+  <DADOS-GERAIS
+    NOME-COMPLETO="Linus Torvalds"
+    NOME-EM-CITACOES-BIBLIOGRAFICAS="TORVALDS, L."
+    NACIONALIDADE="B"
+    CPF="12345678909"
+    PAIS-DE-NASCIMENTO="Brasil"
+    UF-NASCIMENTO="RJ"
+    CIDADE-NASCIMENTO="Campos dos Goytacazes"
+    DATA-NASCIMENTO="04021973"
+    SEXO="MASCULINO"
+    NUMERO-IDENTIDADE="123456789"
+    ORGAO-EMISSOR="IFP"
+    UF-ORGAO-EMISSOR="RJ"
+    DATA-DE-EMISSAO="05061991"
+    NUMERO-DO-PASSAPORTE=""
+    NOME-DO-PAI="Linus Torvalds Senior"
+    NOME-DA-MAE="Lina Torvalds"
+    PERMISSAO-DE-DIVULGACAO="NAO"
+    DATA-FALECIMENTO=""
+    RACA-OU-COR="Parda"
+    SIGLA-PAIS-NACIONALIDADE="BRA"
+    PAIS-DE-NACIONALIDADE="Brasil">
+    <RESUMO-CV
+      TEXTO-RESUMO-CV-RH="possui diversos cursos mundo afora."
+      TEXTO-RESUMO-CV-RH-EN=""/>
+    <OUTRAS-INFORMACOES-RELEVANTES OUTRAS-INFORMACOES-RELEVANTES=""/>
+    <ENDERECO FLAG-DE-PREFERENCIA="ENDERECO_RESIDENCIAL">
+      <ENDERECO-PROFISSIONAL
+        CODIGO-INSTITUICAO-EMPRESA="123456789012"
+        NOME-INSTITUICAO-EMPRESA="Universidade Brasileira"
+        CODIGO-UNIDADE="123456789012"
+        NOME-UNIDADE="Gerência de Desenvolvimento de Software"
+        CODIGO-ORGAO="123456789012"
+        NOME-ORGAO="Diretoria de Tecnologia da Informação"
+        PAIS="Brasil"
+        UF="RJ"
+        LOGRADOURO-COMPLEMENTO="Av. Principal, s/n"
+        BAIRRO="Ipanema da Dengue"
+        CIDADE="Campos dos Goytacazes"
+        CAIXA-POSTAL="123"
+        CEP="28282-828"
+        DDD="22"
+        TELEFONE="27272727"
+        RAMAL="234"
+        FAX="345"
+        E-MAIL="pessoa@universidadelouca.com.br"
+        HOME-PAGE="http://universidadelouca.com.br"/>
+      <ENDERECO-RESIDENCIAL
+        PAIS="Brasil"
+        UF="RJ"
+        LOGRADOURO="Rua Novo Mundo, 99"
+        BAIRRO="Nova Copacabana"
+        CIDADE="Rio de Janeiro"
+        CAIXA-POSTAL="456"
+        CEP="09876-543"
+        DDD="27"
+        TELEFONE="12345678"
+        RAMAL="987"
+        FAX="765"
+        E-MAIL="qissolek@lek.org"
+        HOME-PAGE="https://lek.org"/>
+    </ENDERECO>
+  </DADOS-GERAIS>
+</CURRICULO-VITAE>

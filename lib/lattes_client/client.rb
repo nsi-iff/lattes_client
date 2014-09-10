@@ -1,5 +1,7 @@
 require 'net/http'
 require 'json'
+require 'base64'
+require 'zip'
 
 module LattesClient
   class Client
@@ -11,6 +13,13 @@ module LattesClient
       response = execute_request(:id, cpf: cpf)
       response_hash = parse(response.body)
       response_hash['id']
+    end
+
+    def curriculum(id)
+      response = execute_request(:curriculo_compactado, id: id)
+      response_hash = parse(response.body)
+      zip_file = Base64.decode64(response_hash['curriculo'])
+      extract_file(zip_file)
     end
 
     private
@@ -25,6 +34,18 @@ module LattesClient
         request.body = params.to_json
         http.request(request)
       end
+    end
+
+    def extract_file(zip_content)
+      stream = Zip::InputStream.open(StringIO.new(zip_content))
+      result = []
+      begin
+        stream.get_next_entry
+        result << stream.read.force_encoding('UTF-8')
+      ensure
+        stream.close
+      end
+      result[0]
     end
 
     def uri_for(operation)
