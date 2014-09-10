@@ -28,11 +28,11 @@ module LattesClient
     end
 
     def uri_for(operation)
-      "#{schema}://#@host:#@port#{folder}/#{operation}"
+      "#{schema}://#@host:#@port#{path}/#{operation}"
     end
 
-    def folder
-      @folder ? "/#{@folder}" : ''
+    def path
+      @path ? "/#{@path}" : ''
     end
 
     def schema

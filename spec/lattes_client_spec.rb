@@ -3,7 +3,8 @@ require 'spec_helper'
 describe LattesClient do
   before :all do
     port = 7888
-    @client = LattesClient::Client.new(host: 'localhost', port: port)
+    @client = LattesClient::Client.new(
+      host: 'localhost', port: port, path: 'lattes')
     @server = LattesClient::FakeServer.new.start(port)
   end
 

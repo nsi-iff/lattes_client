@@ -14,7 +14,7 @@ module LattesClient
   end
 
   class FakeApp < Sinatra::Application
-    post '/id' do
+    post '/lattes/id' do
       content_type :json
       { id: '1234567890123456' }.to_json
     end
