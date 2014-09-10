@@ -21,7 +21,7 @@ module LattesClient
 
     def execute_request(operation, params)
       Net::HTTP.start(@host, @port) do |http|
-        request = Net::HTTP::Post.new(uri_for(operation))
+        request = Net::HTTP::Get.new(uri_for(operation))
         request.body = params.to_json
         http.request(request)
       end
