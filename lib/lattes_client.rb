@@ -1,5 +1,5 @@
 require "lattes_client/version"
 
 module LattesClient
-  # Your code goes here...
+  autoload :Client, 'lattes_client/client'
 end
