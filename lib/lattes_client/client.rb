@@ -6,6 +6,7 @@ require 'zip'
 module LattesClient
   class Client
     def initialize(options)
+      options = symbolize_keys(options)
       @host, @port, @path, @ssl = options.values_at(:host, :port, :path, :ssl)
     end
 
@@ -58,6 +59,13 @@ module LattesClient
 
     def schema
       @ssl ? 'https' : 'http'
+    end
+
+    def symbolize_keys(hash)
+      hash.reduce({}) do |h, (k, v)|
+        h[k.to_sym] = v
+        h
+      end
     end
   end
 end
